@@ -8,7 +8,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: sre-toolkit
   timeout: 1m
   wait: true
   syncPolicy:
