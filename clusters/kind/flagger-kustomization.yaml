@@ -11,5 +11,4 @@ spec:
     kind: GitRepository
     name: flagger
   targetNamespace: flagger-system
-  createNamespace: true
   timeout: 2m
