@@ -1,0 +1,9 @@
+# flagger/helm-repository.yaml
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: flagger
+  namespace: flux-system
+spec:
+  url: https://flagger.app
+  interval: 10m
