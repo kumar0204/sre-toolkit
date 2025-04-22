@@ -1,5 +1,5 @@
 # flagger/helm-release.yaml
-apiVersion: helm.toolkit.fluxcd.io/v1
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: flagger
