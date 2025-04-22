@@ -1,0 +1,5 @@
+resources:
+  - namespace-dev-kustomization.yaml
+  - podinfo-kustomization.yaml
+  - flagger-gitrepository.yaml         # 👈 Add this
+  - flagger-kustomization.yaml 
