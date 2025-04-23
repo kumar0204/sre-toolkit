@@ -23,4 +23,6 @@ spec:
     meshProvider: kubernetes
     prometheus:
       install: false
-      metricsServer: "http://prometheus-kube-prometheus-prometheus.monitoring:9090"
+    extraArgs:
+      - "--metrics-server=http://prometheus-kube-prometheus-prometheus.monitoring:9090"  
+    
