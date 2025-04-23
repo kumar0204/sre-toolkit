@@ -24,4 +24,4 @@ spec:
     prometheus:
       install: false
       namespace: monitoring
-      metricsServer: "http://prometheus-operated.monitoring:9090"
+      metricsServer: http://prometheus-operated.monitoring:9090
