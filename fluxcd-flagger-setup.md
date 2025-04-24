@@ -81,25 +81,6 @@ for more information about flux-cd please refer the original documentaion page.
 
 https://fluxcd.io/flux/get-started/
 
----
-
-git repo structure
-
-├── clusters/
-│   └── scout-gitops-aws-dev/
-│       ├── flux-system/
-│       ├── namespace-flagger-kustomization.yaml
-        ├── flagger-kustomization.yaml
-│       
-├── apps/
-│   └── flagger/
-        ├── helm-release.yaml
-        ├── helm-repository.yaml
-		├── kustomization.yaml
-
-
-
-
 ### 2. Add Flagger HelmRepository and HelmRelease
 
 Create a HelmRepository under `flagger-system`:
