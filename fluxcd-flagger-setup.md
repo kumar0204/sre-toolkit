@@ -96,8 +96,7 @@ git repo structure
         ├── helm-release.yaml
         ├── helm-repository.yaml
 		├── kustomization.yaml
-├── .github/
-│   └── workflows/
+
 
 
 
