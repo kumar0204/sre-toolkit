@@ -31,9 +31,9 @@ Together, they enable reliable and automated application rollouts.
 
 ##  Architecture
 
-The following diagram illustrates the architecture of the GitOps deployment workflow using FluxCD and Flagger:
+refer to the fluxcd and flagger architecture diagram in the below link. 
 
-![FluxCD and Flagger Architecture](fluxcd-flagger-architecture.png)
+https://flagger.app/
 
 ```
 Developer
