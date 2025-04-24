@@ -13,7 +13,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: flagger
-        namespace: flux-system
   interval: 5m
   install:
     crds: Create
