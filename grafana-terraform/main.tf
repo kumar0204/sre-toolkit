@@ -12,10 +12,12 @@ provider "grafana" {
   auth = var.grafana_auth_token
 }
 
-resource "grafana_dashboard" "scoutoverview" {
-  config_json = file("${path.module}/dashboards/Overview-1746648726141.json")
+resource "grafana_folder" "scout" {
+  title = "Scout"
 }
 
-resource "grafana_dashboard" "scoutdrilldown" {
-  config_json = file("${path.module}/dashboards/Drilldown-1746648722643.json")
+resource "grafana_dashboard" "scout_dashboards" {
+  for_each    = fileset("${path.module}/dashboards", "*.json")
+  config_json = file("${path.module}/dashboards/${each.key}")
+  folder      = grafana_folder.scout.id
 }
